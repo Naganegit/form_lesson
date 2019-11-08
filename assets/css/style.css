@@ -65,7 +65,7 @@ body {
 
 .input, .remark_txtarea {
   background-color: #fbfbfb;
-  border-radius: 5px;
+  border-radius: 3px;
   box-sizing: border-box;
   height: 36px;
   margin-top: 5px;
@@ -294,7 +294,7 @@ input[type="tel"]:focus,
 .submit_btn {
   background-color: #01bfbd;
   border-color: #01bfbd;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #fff;
   cursor: pointer;
   line-height: inherit;

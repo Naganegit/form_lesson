@@ -2,13 +2,17 @@
 
 /* 共通 */
 body {
+  font-family: 'PT Sans', Helvetica, Arial, YuGothic, 'Kozuka Gothic std', sans-serif;
   color: #545658;
+}
+
+.base_txt {
   font-size: 12px;
 }
 
 .wrap {
   background-color: #f2f6f7;
-  padding: 32px 0;
+  padding: 32px 0 40px;
 }
 
 .main {
@@ -35,10 +39,8 @@ body {
 
 .caution {
   color: #000;
+  line-height: 16px;
 }
-
-
-
 
 /* form */
 .form_title {
@@ -56,6 +58,7 @@ body {
   appearance: none;
   border: 1px solid #d9d9d9;
   outline: none;
+  line-height: 2;
 }
 
 .delete_default_btn {
@@ -78,6 +81,7 @@ input[type="password"]:focus,
 input[type="tel"]:focus,
 .remark_txtarea:focus {
   background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
   box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
 }
 
@@ -97,7 +101,7 @@ input[type="tel"]:focus,
 }
 
 .sns_login {
-  border-radius: 5px;
+  border-radius: 3px;
   display: inline-block;
   font-size: 13px;
   transition: .3s;
@@ -173,29 +177,34 @@ input[type="tel"]:focus,
 }
 
 .name_box {
-  padding-left: 20px;
+  margin-left: 16px;
   width: 100%;
 }
 
 .name_box:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 /* gender_block */
 .radio_block {
-  margin-top: 5px;
+  margin-top: 8px;
+  padding-bottom: 3px;
+}
+
+.radio_block .select_label:not(:first-child) {
+  margin-left: 10.5px;
 }
 
 .radio_block .select_label span {
   position: relative;
-  padding: 3px 10px 3px 20px;
+  padding: 3px 3px 3px 20px;
 }
 
 .radio_block .select_label span::before {
   border: 1px solid #d9d9d9;
   content: "";
-  display: inline-block;
   border-radius: 50%;
+  background-color: #fbfbfb;
   height: 14px;
   left: 0;
   position: absolute;
@@ -208,7 +217,6 @@ input[type="tel"]:focus,
   background: #01bfbd;
   border-radius: 50%;
   content: "";
-  display: inline-block;
   height: 8px;
   left: 4px;
   position: absolute;
@@ -233,11 +241,15 @@ input[type="tel"]:focus,
   position: absolute;
   height: 5px;
   width: 5px;
-  top: 45%;
+  top: 50%;
   transform: rotate(45deg);
   right: 10px;
   border-right: 2px solid #d9d9d9;
   border-bottom: 2px solid #d9d9d9;
+}
+
+.birthplace_box select {
+  color: #545658;
 }
 
 /* course_block */
@@ -246,32 +258,31 @@ input[type="tel"]:focus,
   margin-top: 10px;
 }
 
-.checkbox_line:first-child {
+.checkbox_line:first-of-type {
   margin-top: 5px;
 }
 
 .course_block .select_label span {
   position: relative;
-  padding-left: 22px;
+  padding-left: 25px;
 }
 
 .course_block .select_label span::before {
   border: 1px solid #d9d9d9;
+  box-sizing: border-box;
   content: "";
-  display: inline-block;
-  height: 14px;
+  height: 17px;
   left: 0;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
-  width: 14px;
+  width: 17px;
 }
 
 .course_block .delete_default_btn:checked + span::after {
   border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
   content: "";
-  display: inline-block;
   height: 16px;
   left: 6px;
   position: absolute;
@@ -286,7 +297,6 @@ input[type="tel"]:focus,
   margin-top: 5px;
   padding: 5px;
   resize: none;
-  line-height: 2;
 }
 
 /* submit */
@@ -296,9 +306,9 @@ input[type="tel"]:focus,
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
-  line-height: inherit;
+  line-height: 20px;
   transition: .3s;
-  padding: 13px;
+  padding: 12px;
   width: 100%;
 }
 
@@ -320,5 +330,5 @@ input[type="tel"]:focus,
 }
 
 .mail_link {
-  margin-top: 8px;
+  margin-top: 12px;
 }

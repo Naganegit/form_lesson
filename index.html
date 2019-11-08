@@ -19,25 +19,25 @@
               <a class="links sns_login with_facebook" href="#">Facebookでスタート</a>
               <a class="links sns_login with_google" href="#">Googleでスタート</a>
             </div>
-            <p class="sns_txt">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            <p class="base_txt sns_txt">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </div>
           <div class="sign_up_form">
             <div class="sign_up_title_box">
-              <p class="sign_up_title">アカウント情報</p>
+              <p class="base_txt sign_up_title">アカウント情報</p>
             </div>
             <form action="send_form" method="post">
               <div class="block name_block">
                 <div class="name_box">
-                  <p class="input_title">名字<span class="require_mark"> ※</span></p>
+                  <p class="base_txt input_title">名字<span class="require_mark"> ※</span></p>
                   <input class="input_init input" type="text" name="first_name" id="first_name" required>
                 </div>
                 <div class="name_box">
-                  <p class="input_title">名前<span class="require_mark"> ※</span></p>
+                  <p class="base_txt input_title">名前<span class="require_mark"> ※</span></p>
                   <input class="input_init input" type="text" name="last_name" id="last_name" required>
                 </div>
               </div>
               <div class="block gender_block">
-                <p class="input_title">性別</p>
+                <p class="base_txt input_title">性別</p>
                 <div class="radio_block">
                   <label class="select_label" for="male">
                     <input class="delete_default_btn" type="radio" name="gender" id="male">
@@ -54,34 +54,34 @@
                 </div>
               </div>
               <div class="block birthplace_block">
-                <p class="input_title">出身</p>
+                <p class="base_txt input_title">出身</p>
                 <div class="birthplace_box">
                   <select class="input_init input" name="birthplace" id="birthplace">
-                    <option value="tokyo">東京</option>
-                    <option value="chiba">千葉</option>
-                    <option value="saitmaa">埼玉</option>
-                    <option value="kanagawa">神奈川</option>
+                    <option class="base_txt" value="tokyo">東京</option>
+                    <option class="base_txt" value="chiba">千葉</option>
+                    <option class="base_txt" value="saitmaa">埼玉</option>
+                    <option class="base_txt" value="kanagawa">神奈川</option>
                   </select>
                 </div>
               </div>
               <div class="block email_block">
-                  <p class="input_title">Eメール<span class="require_mark"> ※</span></p>
+                  <p class="base_txt input_title">Eメール<span class="require_mark"> ※</span></p>
                 <input class="input_init input" type="email" name="email" id="email" placeholder="ex) hoge@example.com" required>
               </div>
               <div class="block tel_block">
-                <p class="input_title">電話番号</p>
+                <p class="base_txt input_title">電話番号</p>
                 <input class="input_init input" type="tel" name="phone" id="phone" placeholder="ex) 09012345678">
               </div>
               <div class="block password_block">
-                <p class="input_title">パスワード<span class="require_mark"> ※</span></p>
+                <p class="base_txt input_title">パスワード<span class="require_mark"> ※</span></p>
                 <input class="input_init input" type="password" name="password" id="password" required>
               </div>
               <div class="block re_pass_block">
-                <p class="input_title">パスワード(確認用)<span class="require_mark"> ※</span></p>
+                <p class="base_txt input_title">パスワード(確認用)<span class="require_mark"> ※</span></p>
                 <input class="input_init input" type="password" name="re_pass" id="re_pass" required>
               </div>
               <div class="block course_block">
-                <p class="input_title">希望コース</p>
+                <p class="base_txt input_title">希望コース</p>
                 <label class="checkbox_line select_label" for="front">
                   <input class="delete_default_btn" type="checkbox" name="front" id="front">
                   <span>フロントエンド</span>
@@ -96,22 +96,22 @@
                 </label>
               </div>
               <div class="block remark_block">
-                <p class="input_title">備考</p>
+                <p class="base_txt input_title">備考</p>
                 <textarea class="input_init remark_txtarea" name="remarks" id="remarks" cols="30" rows="10" placeholder="何かあればご記入ください"></textarea>
               </div>
               <div class="block">
                 <input class="input_init submit_btn" type="submit" value="アカウント作成">
               </div>
               <div class="block">
-                <p class="caution">アカウントを作成することにより、<a class="links help_links" href="#">利用規約</a>と<a class="links help_links" href="#">プライバシーポリシー</a>に同意するものとします。</p>
+                <p class="base_txt caution">アカウントを作成することにより、<a class="links help_links" href="#">利用規約</a>と<a class="links help_links" href="#">プライバシーポリシー</a>に同意するものとします。</p>
               </div>
             </form>
           </div>
         </div>
       </main>
       <div class="help_box">
-        <p class="caution">すでにアカウントをお持ちですか？<a class="links help_links" href="#">ログイン</a></p>
-        <p class="mail_link"><a class="links help_links" href="#">認証メールが届きませんか？</a></p>
+        <p class="base_txt caution">すでにアカウントをお持ちですか？ <a class="links help_links" href="#">ログイン</a></p>
+        <p class="base_txt mail_link"><a class="links help_links" href="#">認証メールが届きませんか？</a></p>
       </div>
     </div>
   </body>

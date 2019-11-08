@@ -303,6 +303,11 @@ input[type="tel"]:focus,
   width: 100%;
 }
 
+.submit_btn:active {
+  background-color: #fff;
+  color: #01bfbd;
+  padding: 14px;
+}
 
 
 /* help_box */
